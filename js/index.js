@@ -40,3 +40,57 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//========================================My code starts here==============================================//
+// navigation
+let navigation = document.querySelectorAll('a');
+navigation[0].textContent = siteContent['nav']['nav-item-1']
+navigation[1].textContent = siteContent['nav']['nav-item-2']
+navigation[2].textContent = siteContent['nav']['nav-item-3']
+navigation[3].textContent = siteContent['nav']['nav-item-4']
+navigation[4].textContent = siteContent['nav']['nav-item-5']
+navigation[5].textContent = siteContent['nav']['nav-item-6']
+
+// cta
+let callToActionH1 = document.querySelector('.cta-text h1')
+callToActionH1.textContent = siteContent['cta']['h1']
+let callToActionBtn = document.querySelector('.cta-text button')
+callToActionBtn.textContent = siteContent['cta']['button']
+let callToActionImg = document.querySelector('#cta-img')
+callToActionImg.src = siteContent['cta']['img-src']
+
+// main content h4
+let mainContentH4 = document.querySelectorAll('.main-content h4')
+mainContentH4[0].textContent = siteContent['main-content']['features-h4']
+mainContentH4[1].textContent = siteContent['main-content']['about-h4']
+mainContentH4[2].textContent = siteContent['main-content']['services-h4']
+mainContentH4[3].textContent = siteContent['main-content']['product-h4']
+mainContentH4[4].textContent = siteContent['main-content']['vision-h4']
+
+// main content text
+let mainContentP = document.querySelectorAll('.main-content p')
+mainContentP[0].textContent = siteContent['main-content']['features-content']
+mainContentP[1].textContent = siteContent['main-content']['about-content']
+mainContentP[2].textContent = siteContent['main-content']['services-content']
+mainContentP[3].textContent = siteContent['main-content']['product-content']
+mainContentP[4].textContent = siteContent['main-content']['vision-content']
+
+// middle Img
+let mainContentImg = document.querySelector('#middle-img')
+mainContentImg.src = siteContent['main-content']['middle-img-src']
+
+// contact
+let contactH4 = document.querySelector('.contact h4')
+contactH4.textContent = siteContent['contact']['contact-h4']
+let contactP = document.querySelectorAll('.contact p')
+contactP[0].textContent = siteContent['contact']['address']
+contactP[1].textContent = siteContent['contact']['phone']
+contactP[2].textContent = siteContent['contact']['email']
+
+// footer
+let footer = document.querySelector('footer p')
+footer.textContent = siteContent['footer']['copyright']
+
+
+
+
